@@ -1,11 +1,10 @@
-from config import Config
 from db import database
 import random,threading,asyncio
 from pyrogram import Client
 
 DB = database()
-api_id = Config.APP_ID
-api_hash = Config.API_HASH
+api_id = '20663523'
+api_hash = 'f75fe6157dd68bdf0df5198adbc590fd'
 class app :
     async def ADDuser(slef,GrobUser,inGRob,id,bot):
         list = DB.accounts()
